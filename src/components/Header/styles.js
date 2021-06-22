@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { darken } from 'polished';
 
 export const Container = styled.div`
   background: #fff;
@@ -17,13 +18,7 @@ export const Content = styled.div`
     display: flex;
     align-items: center;
 
-    img {
-      margin-right: 20px;
-      padding-right: 20px;
-      border-right: 1px solid #eee;
-    }
-
-    strong {
+    a {
       font-weight: bold;
       color: #3e3e3e;
     }
@@ -48,6 +43,24 @@ export const GiftCardNumber = styled.div`
     strong {
       display: block;
       color: #333;
+    }
+
+    button {
+      display: block;
+      margin: 2px 0 0;
+      height: 38px;
+      width: 56px;
+      background: #3b9eff;
+      font-weight: bold;
+      color: #fff;
+      border: 0;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background 0.2s;
+
+      &:hover {
+        background: ${darken(0.03, '#3b9eff')};
+      }
     }
   }
 `;
