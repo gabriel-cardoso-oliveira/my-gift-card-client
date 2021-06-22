@@ -7,6 +7,7 @@ import { signInSuccess, signFailure } from './actions';
 export function* signIn({ payload }) {
   try {
     const { giftcard_number, giftcard_password } = payload;
+
     const response = yield call(api.post, 'sessions', {
       giftcard_number,
       giftcard_password,
