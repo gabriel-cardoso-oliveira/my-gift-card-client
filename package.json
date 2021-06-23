@@ -19,6 +19,7 @@
     "react-dom": "^16.10.2",
     "react-icons": "^3.7.0",
     "react-leaflet": "^2.7.0",
+    "react-payment-card-component": "^0.2.1",
     "react-perfect-scrollbar": "^1.5.3",
     "react-redux": "^7.1.1",
     "react-router-dom": "^5.1.2",

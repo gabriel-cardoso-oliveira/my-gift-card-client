@@ -2,6 +2,7 @@ import produce from 'immer';
 
 const INITIAL_STATE = {
   token: null,
+  giftCard: null,
   signed: false,
   loading: false,
 };
@@ -15,6 +16,7 @@ export default function auth(state = INITIAL_STATE, action) {
       }
       case '@auth/SIGN_IN_SUCCESS': {
         draft.token = action.payload.token;
+        draft.giftCard = action.payload.giftCard;
         draft.signed = true;
         draft.loading = false;
         break;
