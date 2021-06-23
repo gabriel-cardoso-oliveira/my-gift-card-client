@@ -55,16 +55,10 @@ export const Content = styled.div`
         background: ${darken(0.03, '#3b9eff')};
       }
     }
+  }
 
-    a {
-      color: #fff;
-      margin-top: 15px;
-      font-size: 16px;
-      opacity: 0.8;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
+  img {
+    max-width: 100%;
+    height: auto;
   }
 `;
