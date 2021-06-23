@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import * as Yup from 'yup';
 
 import { signInRequest } from '~/store/modules/auth/actions';
+import logo from '~/assets/images/logo.png';
 
 const schema = Yup.object().shape({
   giftcard_number: Yup.number().required('O Número do cartão é obrigatório'),
@@ -20,6 +21,7 @@ export default function SignIn() {
 
   return (
     <>
+      <img src={logo} alt="Gift Card" />
       <Form schema={schema} onSubmit={handleSubmit}>
         <Input
           name="giftcard_number"
