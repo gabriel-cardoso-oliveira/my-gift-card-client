@@ -13,6 +13,12 @@ export const Container = styled.div`
   }
 `;
 
+export const ContainerTable = styled.div`
+  width: 100%;
+  max-width: 750px;
+  margin: 50px auto;
+`;
+
 export const Content = styled.div`
   display: flex;
   width: ${convertPxToVw(320, 320)};
